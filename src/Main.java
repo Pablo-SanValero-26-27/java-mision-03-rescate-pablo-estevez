@@ -22,8 +22,8 @@ public class Main {
         // Colocar obstáculos y baterías
         for (int i = 0; i < 5; i++) {
             colocar(matriz, 'X');
-            colocar(matriz, 'B');
         }
+        colocar(matriz, 'B');
 
         imprimir(matriz);
         System.out.println("Vidas: " + vidas);
@@ -70,8 +70,6 @@ public class Main {
                         || matriz[newF][newC] == 'X') {
                     System.out.println();
                     System.out.println("Movimiento bloqueado");
-                    System.out.println("¡Has perdido una vida!");
-                    vidas--;
                 } else {
                     char destino = matriz[newF][newC];
 
