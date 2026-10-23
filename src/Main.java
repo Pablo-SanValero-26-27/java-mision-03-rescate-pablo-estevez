@@ -40,25 +40,11 @@ public class Main {
             boolean valida = true;
 
             switch (letra) {
-                case 'W' -> {
-                    dy = -1;
-                    break;
-                }
-                case 'S' -> {
-                    dy = 1;
-                    break;
-                }
-                case 'A' -> {
-                    dx = -1;
-                    break;
-                }
-                case 'D' ->{
-                    dx = 1;
-                    break;
-                }
-                default ->{
-                    valida = false;
-                }
+                case 'W' -> dy = -1;
+                case 'S' -> dy = 1;
+                case 'A' -> dx = -1;
+                case 'D' -> dx = 1;
+                default -> valida = false;
             }
 
             if (valida) {
