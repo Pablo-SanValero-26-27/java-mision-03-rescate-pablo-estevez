@@ -33,7 +33,7 @@ public class Main {
             int robC = robC(matriz);
 
             System.out.print("Introduce una letra W A S D: ");
-            char letra = Character.toUpperCase(sc.next().charAt(0));
+            char letra = sc.next().charAt(0);
 
             int dx = 0;
             int dy = 0;
